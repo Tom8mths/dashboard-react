@@ -152,10 +152,40 @@ export const RoomInfo = styled.div`
   margin-left: 10px;
   height: 500px;
   background-color: #201d2a;
-  color: #373247;
+  overflow-y: scroll;
   user-select: none;
+  .room-info {
+    color: #fff;
+    h1 {
+      margin: 20px;
+      color: #ff3366;
+      text-transform: uppercase;
+      font-size: 30px;
+    }
+    p {
+      display: inline;
+      margin: 20px;
+    }
+    .temas {
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      width: 70%;
+      justify-content: center;
+      span {
+        color: #201d2a;
+        background-color: #aaa5be;
+        border: 2px solid #aaa5be;
+        border-radius 5px;
+        margin: 3px;
+        white-space: nowrap;
+      }
+    }
+  }
   .information {
+    color: #373247;
     margin-top: 70px;
+    display: none;
     h1 {
       text-transform: uppercase;
       font-weight: 500;
@@ -171,7 +201,6 @@ export const RoomInfo = styled.div`
       height: 100px;
     }
   }
-
   @media screen and (max-width: 750px) {
     margin-left: 0;
     margin-top: 20px;
