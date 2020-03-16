@@ -1,6 +1,8 @@
 :root {
   --text-primary: #b6b6b6;
   --text-secondary: #ececec;
-  --bg-primary: #23232e;
-  --bg-secondary: #141418;
+  --bg-primary: #17212c;
+  --bg-secondary: #25384e;
+  --bg-active: linear-gradient(to right, #de2465, #e0215c, #e22052, #e32148, #e3243d);
+  --transition-speed: 600ms;
 }

@@ -1,15 +1,15 @@
-import React, { Component } from "react";
+import React, { Component } from 'react'
 
 class Rooms extends Component {
-  state = {};
+  state = {}
 
-  render() {
+  render () {
     return (
-      <div className="App">
-        <h1>HELLO WORLD</h1>
+      <div className='App'>
+        <h1></h1>
       </div>
-    );
+    )
   }
 }
 
-export default Rooms;
+export default Rooms
