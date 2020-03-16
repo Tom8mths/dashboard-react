@@ -63,6 +63,23 @@ export const SideItem = styled.li`
   &:last-child {
     margin-top: auto;
   }
+  &:nth-child(5) {
+    display: none;
+  }
+
+  // Small Screens
+  @media only screen and (max-width: 600px) {
+    &:nth-last-child(-n + 5) {
+      display: none;
+    }
+    &:nth-child(5) {
+      display: block;
+    }
+    .toggle {
+      width: 40px;
+      height: 40px;
+    }
+  }
 `;
 
 export const SideLink = styled.a`

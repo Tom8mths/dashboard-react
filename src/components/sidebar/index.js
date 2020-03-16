@@ -10,7 +10,8 @@ import {
   faUserCog,
   faComments,
   faLightbulb,
-  faPalette
+  faPalette,
+  faEllipsisV
 } from "@fortawesome/free-solid-svg-icons";
 
 export default function SideBar() {
@@ -37,6 +38,12 @@ export default function SideBar() {
             <SideLink>
               <StyledIcon className="icon" icon={faProjectDiagram} />
               <span className="link-text">Projects</span>
+            </SideLink>
+          </SideItem>
+
+          <SideItem>
+            <SideLink>
+              <StyledIcon className="icon toggle" icon={faEllipsisV} />
             </SideLink>
           </SideItem>
 
