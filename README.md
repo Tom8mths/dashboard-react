@@ -1,5 +1,7 @@
-![events-page](https://imgur.com/oDRaILL)
-![events-page](https://imgur.com/1T8SuYV)
+## Images
+
+![events-page](https://i.imgur.com/oDRaILL.png)
+![events-page](https://i.imgur.com/1T8SuYV.png)
 
 ## Available Scripts
 
