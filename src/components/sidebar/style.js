@@ -8,10 +8,12 @@ export const Sidebar = styled.div`
   transition: width 200ms ease-in-out;
   z-index: 2;
   font-family: "Spartan", sans-serif;
+  user-select: none;
 
   .link-text {
     opacity: 0;
     margin-left: 1rem;
+    display: none;
   }
 
   //   Small screens
@@ -38,7 +40,7 @@ export const Sidebar = styled.div`
     &:hover .link-text {
       display: inline;
       opacity: 1;
-      transition: opacity 1s ease;
+      transition: all 1s ease;
     }
   }
 `;
@@ -51,6 +53,11 @@ export const Side = styled.ul`
   flex-direction: column;
   align-items: center;
   height: 100%;
+
+  .active {
+    background-image: var(--bg-active);
+    width: 100%;
+  }
 
   //   Small screens
   @media only screen and (max-width: 600px) {
@@ -88,7 +95,7 @@ export const SideLink = styled.a`
   height: 5rem;
   color: var(--text-primary);
   text-decoration: none;
-  filter: grayscale(200%) opacity(0.5);
+  filter: grayscale(100%) opacity(0.5);
   transition: var(--transition-speed);
 
   &:hover {

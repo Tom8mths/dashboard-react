@@ -27,7 +27,7 @@ export const Wrapper = styled.div`
 
 export const Section = styled.div`
   background-color: white;
-  height: 70vh;
+  height: 72vh;
   width: 100%;
   padding: 0.5rem;
 

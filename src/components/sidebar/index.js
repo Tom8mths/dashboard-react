@@ -47,12 +47,14 @@ export default function SideBar() {
             </SideLink>
           </SideItem>
 
-          <SideItem>
-            <SideLink>
-              <StyledIcon className="icon" icon={faCalendarAlt} />
-              <span className="link-text">Events</span>
-            </SideLink>
-          </SideItem>
+          <div className="active">
+            <SideItem>
+              <SideLink>
+                <StyledIcon className="icon" icon={faCalendarAlt} />
+                <span className="link-text">Events</span>
+              </SideLink>
+            </SideItem>
+          </div>
 
           <SideItem>
             <SideLink>

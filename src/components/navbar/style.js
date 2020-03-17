@@ -10,6 +10,7 @@ export const NavBar = styled.nav`
   align-items: center;
   z-index: 3;
   position: relative;
+  user-select: none;
   background-color: #fff;
 
   -webkit-box-shadow: 0px 7px 18px -2px rgba(0, 0, 0, 0.09);
