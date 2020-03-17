@@ -8,7 +8,8 @@ export const NavBar = styled.nav`
   max-height: 70px;
   justify-content: flex-end;
   align-items: center;
-  z-index: 1;
+  z-index: 3;
+  position: relative;
   background-color: #fff;
 
   -webkit-box-shadow: 0px 7px 18px -2px rgba(0, 0, 0, 0.09);
@@ -72,25 +73,27 @@ export const NavBar = styled.nav`
 `;
 
 export const Search = styled.div`
-width: 100%;
-form {
   width: 100%;
-  max-width: 500px;
-  display: flex;
-  widht: 100%;
-}
+  form {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    widht: 100%;
+  }
   input[type="search"] {
     background-color: var(--bg-lightblue);
-    background-image: url("/search-icon.png")
+    background-image: url("/search-icon.png");
     background-position: 10px 10px;
     background-repeat: no-repeat;
     border: 1px solid var(--text-secondary);
     width: 100%;
-    padding: 12px 20px;
+    padding: 12px 0 12px 40px;
     margin: 10px 3px;
     box-sizing: border-box;
   }
-  input[type=button], input[type=submit], input[type=reset] {
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"] {
     background-image: var(--bg-active);
     border: none;
     color: white;

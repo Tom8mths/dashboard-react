@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Wrapper, Section } from "./style";
+import { Container, Wrapper, Section, Time } from "./style";
 
 class Rooms extends Component {
   state = {};
@@ -10,18 +10,56 @@ class Rooms extends Component {
         <Wrapper>
           <h1>Events</h1>
           <Section>
+            <h2>Create Event</h2>
             <form>
-              <label for="fname">First name:</label>
-              <input type="text" id="fname" name="fname" />
-              <label for="lname">Last name:</label>
-              <input type="text" id="lname" name="lname" />
-              <label for="lname">Last name:</label>
-              <input type="text" id="lname" name="lname" />
+              <label>Title</label>
+              <input
+                className="title"
+                type="text"
+                id="title"
+                name="title"
+                placeholder="Title"
+              />
+              <label>Place</label>
+              <input
+                className="place"
+                type="text"
+                id="place"
+                name="place"
+                placeholder="Place"
+              />
+              <label>Description</label>
               <textarea
                 id="subject"
                 name="subject"
-                placeholder="Write something.."
+                placeholder="Description"
               ></textarea>
+              <label>
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+                Lasts all day
+              </label>
+              <Time>
+                <label>Starting time:</label>
+                <input
+                  type="time"
+                  id="appt"
+                  name="appt"
+                  min="00:00"
+                  max="23:59"
+                  required
+                />
+                <label>Finishing time:</label>
+                <input
+                  type="time"
+                  id="appt"
+                  name="appt"
+                  min="00:00"
+                  max="23:59"
+                  required
+                />
+              </Time>
+              <input type="submit" value="Create Event"></input>
             </form>
           </Section>
         </Wrapper>

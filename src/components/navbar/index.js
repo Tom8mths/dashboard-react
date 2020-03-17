@@ -11,7 +11,7 @@ export default function Navbar() {
         <h1>FRONTEND DASHBOARD</h1>
         <h2>FD</h2>
         <Search>
-          <form action="/action_page.php">
+          <form>
             <input
               placeholder="Search"
               type="search"

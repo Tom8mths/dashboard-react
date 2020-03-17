@@ -6,7 +6,7 @@ export const Sidebar = styled.div`
   position: fixed;
   background-color: var(--bg-primary);
   transition: width 200ms ease-in-out;
-  z-index: -1;
+  z-index: 2;
   font-family: "Spartan", sans-serif;
 
   .link-text {
