@@ -54,11 +54,6 @@ export const Side = styled.ul`
   align-items: center;
   height: 100%;
 
-  .active {
-    background-image: var(--bg-active);
-    width: 100%;
-  }
-
   //   Small screens
   @media only screen and (max-width: 600px) {
     flex-direction: row;
@@ -72,6 +67,15 @@ export const SideItem = styled.li`
   }
   &:nth-child(5) {
     display: none;
+  }
+
+  .active {
+    filter: grayscale(0%) opacity(1);
+    background: var(--bg-active);
+    color: var(--text-secondary);
+    &:hover {
+      background: var(--bg-active) !important;
+    }
   }
 
   // Small Screens
