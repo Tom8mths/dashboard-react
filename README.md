@@ -1,3 +1,6 @@
+![events-page](https://imgur.com/oDRaILL)
+![events-page](https://imgur.com/1T8SuYV)
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -64,3 +67,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
